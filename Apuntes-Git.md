@@ -119,12 +119,12 @@
 > git ls-tree -r --name-only <**hash**>
 
 1. Crear archivo **.gitignore**
-- Ignorar Archivo
+- Ignorar Archivo.
 > con **"*"**, se ignorara tdos los archivos con la ruta seleccionada.
-- Designorar Archivo
+- Designorar Archivo.
 > con **"!"**, se designorara el archivos seleccionado.
-- Ignorar Directorio seleccionado
+- Ignorar Directorio seleccionado.
 > con **"/"**, se ignorara el directorio seleccionado.
-
+- Ejemplos.
 > ejemplo: ***.py**  ;  **!noignorar.py**  ;  **fotos/**
 
