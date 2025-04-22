@@ -32,6 +32,7 @@
 |------------|---------------------------|
 | **git clone <**ruta HTTPS**>**    | Clonar Repositorio Remoto a Repositorio Local |
 | **mkdir <nombre_carpeta>**|Creacion Carpeta|
+| **touch <nombre_archivo>**|Creacion archivo|
 | **git rm <nombre_carpeta>**|Eliminacion Archivo|
 | **git mv  <nombre_archivo>**|Cambiar nombre Carpeta|
 | **git rm --cached <nombre_archivo>**|Remover archivo del --> <**area de preparacion**>|
@@ -59,11 +60,6 @@
 | **git commits -a**     | Otra manera|   
 | **git push origin main**     | ⬆️ Repo local --> Repo remoto|    
 | **git pull**     | ⬇️ Cambios de Repo remoto --> Repo local|    
-
-
-
-
-
 
 
 
@@ -103,9 +99,6 @@
 | **git reset --soft head~2**        |Mover el head (en este ejemplo: **eliminamos 2 hacia abajo**)            |
 
 
-
-
-
 ## 🌿 **Ramas**
 
 |   codigo       | Descripción               | 
@@ -120,13 +113,18 @@
 | **git reset --hard <**hash**>**   | Deshacer commit fusionado
 
 
-
-
 ## **Git ignore**
-
-1. Crear archivo **.gitignore**
 
 - Mostrar nombre de los archivos involucrados en el commit.
 > git ls-tree -r --name-only <**hash**>
 
--
+1. Crear archivo **.gitignore**
+- Ignorar Archivo
+> con **"*"**, se ignorara tdos los archivos con la ruta seleccionada.
+- Designorar Archivo
+> con **"!"**, se designorara el archivos seleccionado.
+- Ignorar Directorio seleccionado
+> con **"/"**, se ignorara el directorio seleccionado.
+
+> ejemplo: ***.py**  ;  **!noignorar.py**  ;  **fotos/**
+
